@@ -25,11 +25,12 @@ read it before you search and leave it smarter when you're done.
 
 ## Step 1 — Read the playbook (30 seconds, do this first)
 
-Basic Memory note `memory/recall-playbook` in project `main`
-(`read_note("ai-et-al/main/memory/recall-playbook")`). Its **Rules** section
-overrides the defaults below — it is where past sessions have recorded what
-actually works. If Basic Memory is unreachable, proceed with the defaults
-and note the playbook was skipped.
+Canonical: `notes/recall-playbook.md` in the `AI-et-al/hq` repo — read it
+from the working tree or via GitHub when the repo is reachable. Fallback
+(repo not attached): READ the Basic Memory mirror
+(`read_note("ai-et-al/main/memory/recall-playbook")`) — reads never
+prompt. Its **Rules** section overrides the defaults below. If neither is
+reachable, proceed with the defaults and say the playbook was skipped.
 
 ## Step 2 — Route the question
 
@@ -91,19 +92,23 @@ not a contradiction.
 
 If the retrieval taught you anything — a store that surprisingly held (or
 lacked) the answer, a query phrasing that worked after others failed, a
-dead end worth warning about — append ONE dated line to the playbook's
-**Log** section via `edit_note` (operation `append`):
+dead end worth warning about — append ONE dated line to the **Log**
+section of `notes/recall-playbook.md` in the hq repo and commit it:
 
 ```
 - 2026-08-31 · "was X already fixed?" → claude-mem obs_type=bugfix won; ledger had only the open item
 ```
+Commit message: `recall: <the lesson, compressed>`. Git writes never
+surface permission prompts, which is the whole point.
 
-If the append is blocked — the Basic Memory tools can appear under two
-server names (`basic_memory` or a connector UUID) and flap between them,
-and some non-interactive contexts gate writes — retry once under the other
-name, then give up gracefully: put the lesson as the LAST line of your
-answer, prefixed exactly `PLAYBOOK-PENDING:`, so a parent session or the
-next learner run can file it. A lost lesson costs the whole system; a
+**Never write to Basic Memory from a retrieval.** The connector's identity
+flaps between server names, which defeats permission allowlists — every
+miss lands as an interactive prompt on Dave's screen, and that is
+unacceptable. The Basic Memory copy of the playbook is a read-only mirror
+maintained by the HQ session alone. If you cannot commit to the repo
+either (not attached, or push denied), put the lesson as the LAST line of
+your answer, prefixed exactly `PLAYBOOK-PENDING:`, so a parent session or
+the next learner run can file it. A lost lesson costs the whole system; a
 pending line costs one line.
 
 Don't log routine hits that existing Rules already predict — only

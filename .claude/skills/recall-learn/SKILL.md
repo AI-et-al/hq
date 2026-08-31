@@ -22,10 +22,13 @@ of the rulebook is a diffable history.
 
 ## The loop (narrate each step as you do it)
 
-1. **Read the playbook** — Basic Memory note `memory/recall-playbook`
-   (project `main`): the **Rules** section (current compounded wisdom) and
-   the **Log** section (raw observations appended by retrievals since the
-   last learning pass).
+1. **Read the playbook** — `notes/recall-playbook.md` in the `AI-et-al/hq`
+   repo (the CANONICAL copy): the **Rules** section (current compounded
+   wisdom) and the **Log** section (raw observations committed by
+   retrievals since the last learning pass). Also scan recent retrieval
+   answers or inbox notes for stray `PLAYBOOK-PENDING:` lines — those are
+   lessons from surfaces that couldn't commit; fold them in as Log
+   entries.
 
 2. **Judge the evidence, out loud.** For each Log entry, say what it
    suggests: does it confirm an existing Rule (strengthens it), contradict
@@ -43,21 +46,27 @@ of the rulebook is a diffable history.
    in the Rules and in the git record below). Leave unprocessed or
    still-ambiguous entries for the next pass.
 
-5. **Commit the visible record.** Write the updated playbook verbatim to
-   `notes/recall-playbook.md` in the `AI-et-al/hq` repo, plus a short
-   dated learning report `notes/recall-learning/YYYY-MM-DD.md`: entries
-   processed, rules added/revised/retired, entries held over, and one
-   honest line on whether retrieval is actually improving. Commit both to
-   `main` with message `recall-learn: <summary>`. The git history of these
-   two files IS the watchable learning curve.
+5. **Commit the visible record.** Commit the updated
+   `notes/recall-playbook.md` plus a short dated learning report
+   `notes/recall-learning/YYYY-MM-DD.md`: entries processed, rules
+   added/revised/retired, entries held over, and one honest line on
+   whether retrieval is actually improving. Commit both to `main` with
+   message `recall-learn: <summary>`. The git history of these two files
+   IS the watchable learning curve. Then, ONLY if this run is in the HQ
+   session or a session Dave is attending (where a stray prompt costs
+   nothing), refresh the read-only Basic Memory mirror
+   (`memory/recall-playbook`); otherwise skip the mirror and say so — an
+   unattended MCP write that raises a permission prompt on Dave's screen
+   is worse than a stale mirror.
 
 6. **Report.** End with a compact before/after of the Rules diff and where
    Dave can watch: the commit, and the live note in Basic Memory.
 
 ## Guardrails
 
-- Basic Memory's note stays the runtime source of truth (every surface
-  reads it); the git copy is the audit mirror. Update both, note first.
+- The git file is canonical; the Basic Memory note is a read-only mirror
+  for repo-less surfaces, refreshed only from attended sessions (see step
+  5). Never treat the mirror as the source of truth.
 - This skill edits ONLY the playbook (and its git mirror). It never edits
   `memory-recall/SKILL.md` itself; if the evidence says the skill's own
   routing table or recipes are wrong, put a proposal in the learning
