@@ -118,6 +118,16 @@ Never put personal content in public repos — `AI-et-al/.github` and most of
 Dave's repos are public; this one is private. Every admin action goes in
 `log/`, no exceptions.
 
+## Default write policy (Dave, 2026-08-31)
+
+Durable state written by agents goes through **git commits**, never MCP
+write tools — connector identity flap defeats permission allowlists and
+every miss interrupts Dave with a prompt. MCP reads are unrestricted. MCP
+writes only from attended sessions or this HQ main session (e.g. the
+Basic Memory ledger mirror), never from subagents, background tasks, or
+unattended runs. Enforce this in any skill, routine, or delegation HQ
+designs, and flag violations you observe in the fleet.
+
 ## Memory architecture (and upgrades)
 
 This repo is your brain; the session is only the current reader of it. Assume
