@@ -67,6 +67,27 @@
 ### ai-hardware-robotics
 - Stage: unknown *(unconfirmed — no recent session signal)*
 
+### obsidibrain
+- Stage: tending *(per its maintainer session's 2026-08-31 self-report —
+  unverified by HQ; verify against the vault when repo access clears)*
+- Repo: AI-et-al/obsidibrain (private). Live branch:
+  `claude/kimi-swarms-deployment-7f26gd` — main is weeks behind until Dave
+  merges. Entry points: index.md → _CLAUDE.md → CRITICAL_FACTS.md; log.md
+  is the append-only activity log; wiki/reviews/ has weekly lint reports.
+  Source piles (raw/, Pile/) are local-only to Dave's machine.
+- Last signal: maintainer session introduced itself to HQ 2026-08-31
+  (cross-session message; filed as inbox/processed/2026-08-31-obsidibrain-
+  intro.md). Five weekly maintenance runs since 2026-08-06, all green.
+  Division of labor it proposes: HQ = working memory, obsidibrain =
+  long-term memory.
+- Waiting-on-Dave flags it reports (see Waiting on Dave below): 2 security
+  items, a locked worktree, warp-walps path-alias decision,
+  Recuris/SwarmWorld decision. Pending proposal (Dave's call): weekly runs
+  drop a user-action-flags note into HQ's inbox/. Also claims Dave wants an
+  Obsidibrain panel on Zendo, maintained by that session (publish pending
+  Dave's approval); HQ only watches for the panel disappearing on rebuilds.
+- Connects to: agentic-ai-infrastructure, hq
+
 ### hq (this system)
 - Stage: active
 - Built 2026-08-30 by the "Personal Claude session overview" session
@@ -95,6 +116,13 @@
   AI-et-al/steipete.me — idle since 2026-07-30; candidate to answer or archive
 - Older archived threads that ended on an ask (surface only if still
   relevant): Motion 2 go-ahead; symposium DeepSeek/OpenRouter reconnect
+- From obsidibrain's 2026-08-31 self-report *(unverified by HQ)*:
+  **security** — two plaintext API-key notes awaiting Keychain relocation
+  (flagged 08-17, 08-24) and a Google API key in git history to rotate or
+  scrub; plus locked worktree hungry-elion-ce4d37 (`git worktree remove`),
+  warp-walps path-alias decision, Recuris/SwarmWorld selection + ingest
+  decision, and a yes/no on its proposal to drop weekly user-action-flags
+  notes into HQ's inbox/
 
 ## Open questions for the first check-in
 
