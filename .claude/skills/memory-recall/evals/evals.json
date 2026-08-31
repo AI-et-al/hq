@@ -1,0 +1,26 @@
+{
+  "skill_name": "memory-recall",
+  "evals": [
+    {
+      "id": 0,
+      "name": "deepseek-key-history",
+      "prompt": "did we ever sort out that deepseek api key thing? i remember hitting a 402 error at some point and there was something about the key being in a plaintext note too",
+      "expected_output": "Finds both threads: the symposium DeepSeek/OpenRouter setup that stalled on a 402 (credit exhausted) awaiting /mcp reconnect + DEEPSEEK_API_KEY env var (HQ ledger, archived sessions Aug 12-15), AND the vault's carried security flag that the DeepSeek key sits in a plaintext note in raw/ awaiting Keychain relocation (lint-2026-08-31 flag 5) - still open, Dave said he'd handle keys when he can. Cites which stores were consulted.",
+      "files": []
+    },
+    {
+      "id": 1,
+      "name": "weather-widget-status",
+      "prompt": "whats the current state of the weather widget project? did v3 ever ship",
+      "expected_output": "v3 was delivered Aug 30 (mid-band text brightened, capsules sized to contain text) and is review_ready in AI-et-al/ios-projects PR #1, waiting on Dave's review/merge decision. Sourced from HQ ledger (canonical) or its Basic Memory mirror.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "vault-lint-flags",
+      "prompt": "what did the most recent obsidibrain lint pass flag, and which of those are still waiting on me?",
+      "expected_output": "From lint-2026-08-31.md on the live branch: flags include Terminus/Codex hooks decision, path alias (RESOLVED same day per log.md - canonical path chosen), credential files in raw/repos/ backups (low), OpenRouter key at vault root (crit, carried), DeepSeek key note (crit, carried), Google API key in git history (carried), locked worktree hungry-elion-ce4d37, transcript allowlist gap, PR #19 merge verification. Still waiting: the two key notes, git-history key, worktree, Recuris/SwarmWorld choice, Codex-in-Terminus question. Should read the vault directly (live branch) and note log.md resolutions that post-date the lint report.",
+      "files": []
+    }
+  ]
+}
