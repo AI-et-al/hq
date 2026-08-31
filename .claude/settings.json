@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__bf7c680d-5fdc-5ef4-b4a0-abadb619bf0a__list_sessions",
+      "mcp__bf7c680d-5fdc-5ef4-b4a0-abadb619bf0a__add_repo",
+      "mcp__8016106a-f4d2-416d-a294-bd501afb3f7a__write_note",
+      "mcp__8016106a-f4d2-416d-a294-bd501afb3f7a__edit_note",
+      "mcp__8016106a-f4d2-416d-a294-bd501afb3f7a__move_note",
+      "mcp__8016106a-f4d2-416d-a294-bd501afb3f7a__create_memory_project",
+      "mcp__basic_memory__write_note",
+      "mcp__basic_memory__edit_note",
+      "mcp__basic_memory__move_note",
+      "mcp__basic_memory__create_memory_project"
+    ]
+  }
+}
