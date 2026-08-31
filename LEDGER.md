@@ -10,15 +10,26 @@
 ## Projects
 
 ### janus-reconstruction
-- Stage: active *(unconfirmed)*
-- Repo: AI-et-al/Janus
-- Last signals: "AI agent goal skill from PDF system" session (updated
-  2026-08-28) — skill usage documented, ready for experiment, review_ready;
-  "Siri setup loop" session (2026-08-16) delivered a diagnosis plus 6-step
-  fix guide — review_ready
-- Next: confirm whether the Siri fix guide was applied; decide whether to run
-  the goal-skill experiment
-- Connects to: agentic-ai-infrastructure
+- Stage: retired → Symposium *(per repo evidence 2026-08-15; Dave to
+  confirm stage label)*
+- Repo: AI-et-al/Janus (public). Commit 1c140f7 (2026-08-15): "docs:
+  succession note — Janus is retired, its council and router live on as
+  Symposium" (written by the "Motion 2 go" session).
+- 2026-08-31, Dave asked why Zendo showed "janus READY · Aug 28": verified
+  via Vercel — the repo has been wired to Vercel auto-deploy all along, so
+  every push triggered a build. Pushes from the "AI agent goal skill"
+  session (loop-engineering skill content living in the Janus repo, PR #19)
+  produced a string of ERROR builds Aug 12–16 (CLI repo, no public/ output).
+  Merging PR #19 on Aug 28 00:01 CT included a vercel.json fix + static
+  placeholder page, which made that auto-deploy finally succeed — the
+  "READY" tile. Nothing of Janus itself shipped; no one resumed the project.
+- Open decision for Dave: stop the signal at the source — disconnect or
+  pause the janus Vercel project (it serves only a placeholder page), or
+  leave it inert (deploys only fire on pushes to the repo).
+- Loose threads (previous stage): Siri fix guide (2026-08-16) never
+  confirmed applied; goal-skill experiment ready but its home is really
+  agentic-ai-infrastructure, not Janus.
+- Connects to: agentic-ai-infrastructure (Symposium is the successor)
 
 ### agentic-ai-infrastructure
 - Stage: active *(unconfirmed)*
