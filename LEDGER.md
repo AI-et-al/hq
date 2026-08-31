@@ -38,10 +38,19 @@
 
 ### personal-dashboard
 - Stage: tending
-- Pieces: Zazen Station artifact (auto-refreshes 4x/day via its own routine);
-  widgy-icons (Supabase); weather widgets in AI-et-al/ios-projects — PR #1,
-  v3 delivered and review_ready (2026-08-30)
-- Next: Dave reviews weather widget v3; decide whether PR #1 merges
+- Pieces: **Zendo** artifact (formerly "Zazen Station"); widgy-icons
+  (Supabase, ACTIVE_HEALTHY); weather widgets in AI-et-al/ios-projects —
+  PR #1, v3 delivered and review_ready (2026-08-30)
+- Incident 2026-08-30: the "Refresh Zazen Station dashboard" routine had
+  never completed a run (created in-session → fired sessions carried no
+  connector grants; data frozen at Aug 28). Builder session, at Dave's
+  direction, paused the routine and manually refreshed the artifact
+  ("manual-refresh-fix"). Dave is recreating the routine from the claude.ai
+  Routines UI with connectors attached; the old paused trigger gets deleted
+  after its first successful fire is confirmed. Routine remains off-limits
+  to HQ.
+- Next: Dave reviews weather widget v3; confirm the new Zendo routine's
+  first fire landed
 - Connects to: home-lab
 
 ### bookclub-cli
@@ -63,9 +72,12 @@
 - Built 2026-08-30 by the "Personal Claude session overview" session
 - First sweep done 2026-08-30: 93 sessions reviewed, check-in routine
   adopted, intro digest sent
-- Next: validate the *(unconfirmed)* stages with Dave; Dave's feeding steps
-  remain (Basic Memory resubscribe, claude.ai memory instruction, local
-  CLAUDE.md snippet)
+- Basic Memory adopted 2026-08-31: Dave resubscribed (verified live —
+  workspace "AI-et-al", cloud projects "getting-started" and "main");
+  ledger now mirrored as notes in project "main", folder `hq/`, tagged
+  `hq-ledger`. Repo stays canonical.
+- Next: validate the *(unconfirmed)* stages with Dave; Dave's remaining
+  feeding steps: claude.ai memory instruction, local CLAUDE.md snippet
 
 ## Waiting on Dave (updated 2026-08-30 sweep)
 
