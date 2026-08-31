@@ -142,3 +142,8 @@
 2. Is the review-loop work on agentic-ai-infrastructure's critical path, or
    parkable?
 3. Is personal-dashboard in tending mode now, or is there a next build phase?
+
+### bucketless
+- Stage: parked *(Dave, 2026-08-31: "catch-all project, still figuring out
+  how best to use it — ignore for now")*
+- Un-park condition: Dave raises it
