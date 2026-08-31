@@ -43,7 +43,10 @@ and note the playbook was skipped.
 
 Start with the cheapest store likely to answer; escalate only if it misses.
 For cross-cutting questions, two stores beat four — pick the two the table
-suggests and stop when they agree.
+suggests and stop when they agree. Thoroughness is not touring every store:
+the playbook read is ONE note-read, and when the route is obvious a single
+store plus the playbook is a complete, fast retrieval — measured overhead
+of over-consulting is about a minute per question.
 
 ## Step 3 — Search each store the way it wants
 
@@ -94,6 +97,14 @@ dead end worth warning about — append ONE dated line to the playbook's
 ```
 - 2026-08-31 · "was X already fixed?" → claude-mem obs_type=bugfix won; ledger had only the open item
 ```
+
+If the append is blocked — the Basic Memory tools can appear under two
+server names (`basic_memory` or a connector UUID) and flap between them,
+and some non-interactive contexts gate writes — retry once under the other
+name, then give up gracefully: put the lesson as the LAST line of your
+answer, prefixed exactly `PLAYBOOK-PENDING:`, so a parent session or the
+next learner run can file it. A lost lesson costs the whole system; a
+pending line costs one line.
 
 Don't log routine hits that existing Rules already predict — only
 surprises. **That single append is the whole of your job here.** Turning
