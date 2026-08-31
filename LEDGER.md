@@ -76,8 +76,14 @@
   workspace "AI-et-al", cloud projects "getting-started" and "main");
   ledger now mirrored as notes in project "main", folder `hq/`, tagged
   `hq-ledger`. Repo stays canonical.
-- Next: validate the *(unconfirmed)* stages with Dave; Dave's remaining
-  feeding steps: claude.ai memory instruction, local CLAUDE.md snippet
+- 2026-08-31: Dave (live, in-session) — he is still reviewing whether HQ is
+  set up as he intended; a fuller explanation of HQ's purpose is coming.
+  The system is not intended *only* as ADHD machinery (that's a big part,
+  not the whole). Treat the charter's framing as provisional until that
+  sync; expect possible charter edits after it.
+- Next: Dave's sync-up conversation (purpose + setup review); then validate
+  the *(unconfirmed)* stages; Dave's remaining feeding steps: claude.ai
+  memory instruction, local CLAUDE.md snippet
 
 ## Waiting on Dave (updated 2026-08-30 sweep)
 
