@@ -99,6 +99,11 @@
   Dave's approval); HQ only watches for the panel disappearing on rebuilds.
 - Connects to: agentic-ai-infrastructure, hq
 
+### bucketless
+- Stage: parked *(Dave, 2026-08-31: "catch-all project, still figuring out
+  how best to use it — ignore for now")*
+- Un-park condition: Dave raises it
+
 ### hq (this system)
 - Stage: active
 - Built 2026-08-30 by the "Personal Claude session overview" session
@@ -143,7 +148,3 @@
    parkable?
 3. Is personal-dashboard in tending mode now, or is there a next build phase?
 
-### bucketless
-- Stage: parked *(Dave, 2026-08-31: "catch-all project, still figuring out
-  how best to use it — ignore for now")*
-- Un-park condition: Dave raises it
