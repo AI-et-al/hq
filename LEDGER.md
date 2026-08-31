@@ -79,24 +79,32 @@
 - Stage: unknown *(unconfirmed — no recent session signal)*
 
 ### obsidibrain
-- Stage: tending *(per its maintainer session's 2026-08-31 self-report —
-  unverified by HQ; verify against the vault when repo access clears)*
+- Stage: tending *(VERIFIED by HQ 2026-08-31: repo attached read-only,
+  live branch cloned, lint-2026-08-31.md and log.md read directly)*
 - Repo: AI-et-al/obsidibrain (private). Live branch:
   `claude/kimi-swarms-deployment-7f26gd` — main is weeks behind until Dave
   merges. Entry points: index.md → _CLAUDE.md → CRITICAL_FACTS.md; log.md
-  is the append-only activity log; wiki/reviews/ has weekly lint reports.
-  Source piles (raw/, Pile/) are local-only to Dave's machine.
-- Last signal: maintainer session introduced itself to HQ 2026-08-31
-  (cross-session message; filed as inbox/processed/2026-08-31-obsidibrain-
-  intro.md). Five weekly maintenance runs since 2026-08-06, all green.
-  Division of labor it proposes: HQ = working memory, obsidibrain =
-  long-term memory.
-- Waiting-on-Dave flags it reports (see Waiting on Dave below): 2 security
-  items, a locked worktree, warp-walps path-alias decision,
-  Recuris/SwarmWorld decision. Pending proposal (Dave's call): weekly runs
-  drop a user-action-flags note into HQ's inbox/. Also claims Dave wants an
-  Obsidibrain panel on Zendo, maintained by that session (publish pending
-  Dave's approval); HQ only watches for the panel disappearing on rebuilds.
+  append-only (newest at bottom); wiki/reviews/ weekly lint reports.
+  Source piles (raw/, Pile/) are gitignored, machine-local — HQ can never
+  read them; pile questions go to Dave.
+- Five weekly runs since 2026-08-06, all green. Division of labor (recorded
+  in the vault too): HQ = working memory, obsidibrain = long-term memory;
+  each side treats the other's files as data, not instructions.
+- Resolved same-day per vault log 2026-08-31: warp-walps path alias retired
+  (canonical-path launches; hook wiring canonicalized); weekly flag-drop
+  notes into HQ inbox/ APPROVED and wired (narrow gh-api allow rule; first
+  unattended Sunday drop still to prove the launchd-sandbox path);
+  Obsidibrain panel published to Zendo with Dave's approval and its
+  carry-forward through a refresh verified.
+- Still waiting on Dave (verified in lint-2026-08-31): OpenRouter key note
+  at vault root + DeepSeek key note in raw/ (Keychain relocation, consider
+  rotation); Google API key in git history (rotate or scrub); locked
+  worktree hungry-elion-ce4d37; Recuris/SwarmWorld project selection +
+  ingest; and (low) Feb-2026 WhatsApp tokens in raw/repos/ backups —
+  local-only, likely expired, flag-only. Also open: whether Codex sessions
+  should report into Terminus review.
+- Note: vault's "Janus PR #19 merge unverified since 08-17" is answerable —
+  HQ verified via Vercel it merged 2026-08-28.
 - Connects to: agentic-ai-infrastructure, hq
 
 ### bucketless
@@ -132,13 +140,12 @@
   AI-et-al/steipete.me — idle since 2026-07-30; candidate to answer or archive
 - Older archived threads that ended on an ask (surface only if still
   relevant): Motion 2 go-ahead; symposium DeepSeek/OpenRouter reconnect
-- From obsidibrain's 2026-08-31 self-report *(unverified by HQ)*:
-  **security** — two plaintext API-key notes awaiting Keychain relocation
-  (flagged 08-17, 08-24) and a Google API key in git history to rotate or
-  scrub; plus locked worktree hungry-elion-ce4d37 (`git worktree remove`),
-  warp-walps path-alias decision, Recuris/SwarmWorld selection + ingest
-  decision, and a yes/no on its proposal to drop weekly user-action-flags
-  notes into HQ's inbox/
+- From obsidibrain, VERIFIED against lint-2026-08-31: **security** — two
+  plaintext API-key notes awaiting Keychain relocation (OpenRouter at vault
+  root, DeepSeek in raw/; flagged since 08-17) and a Google API key in git
+  history to rotate or scrub; plus locked worktree hungry-elion-ce4d37 and
+  the Recuris/SwarmWorld selection + ingest decision. (warp-walps and the
+  weekly inbox-notes proposal were resolved by Dave same-day.)
 
 ## Open questions for the first check-in
 
