@@ -60,8 +60,21 @@
   Routines UI with connectors attached; the old paused trigger gets deleted
   after its first successful fire is confirmed. Routine remains off-limits
   to HQ.
-- Next: Dave reviews weather widget v3; confirm the new Zendo routine's
-  first fire landed
+- 2026-08-31 redesign: Zendo restyled at Dave's direction to feel like an
+  actual zendo — Tricycle-editorial typography (Newsreader serif + Jost
+  labels, white cards on warm gray, orange/purple accents), then an iOS
+  typography pass (Safari text-size-adjust, 11px label floor, sub-640px
+  scale block), a row-seam fix (title/detail were concatenating), and
+  finally Dave's own Hakone Gardens photograph as the hero banner
+  (committed to notes/assets/, embedded as a data URI). Four versions
+  published; data, live layer and Obsidibrain panel untouched throughout.
+  Detrack rule applied earlier the same day: only AI-et-al-created repos
+  are tracked, no analysis forks.
+- Next: Dave reviews weather widgets (PR #1 v3, plus newly found unmerged
+  PR #2 carrying an owner-installed dayfix build); paste
+  notes/zendo-routine-prompt-v2.md into the four Zendo routines so
+  refreshes stop re-adding janus; confirm the routine's next fire preserves
+  the new design
 - Connects to: home-lab
 
 ### bookclub-cli
