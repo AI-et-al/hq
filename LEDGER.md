@@ -152,12 +152,15 @@
   copy `notes/mac-user-settings.json` into `~/.claude/settings.json` on each
   Mac — user-level is the only layer that covers terminal sessions. Detail
   in `notes/permission-prompts-fix.md`.
-- **Zendo refresh routines — decision needed.** They spawn a fresh cloud
-  session per fire, which has no settings file and default permissions, so
-  neither fix above reaches them. This is both the remaining prompt source
-  and a recurring token cost (4x daily). Options: attach the hq repo to each
-  routine, or bind them to one persistent session with a permissive
-  permission mode. HQ can build the second on his word.
+- **Zendo refresh routines — recipe ready, 2 minutes in the UI.** Dave
+  asked HQ to bind them to a persistent session (09-02); HQ built and
+  probed it, and hit a hard org limit: agent-created sessions and routines
+  cannot carry connector grants. So the fix is a single UI-created routine
+  with the **hq repo attached** (which loads the committed dual-name
+  allowlist and ends the prompts), 2x daily, notifications off. Steps and
+  paste-ready prompt: `notes/zendo-routine-v3-recipe.md`. Persistent
+  session `session_015obGPpQBfKEBVy31DBhJWX` is idle and kept for a later
+  connector-free design.
 - **Token budget.** This HQ session is $241 of the $767 30-day spend; the
   driver is context weight re-read every turn. Recommendation: retire it for
   a fresh HQ session (all durable state is committed) and cut the Zendo
