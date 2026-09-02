@@ -143,7 +143,26 @@
   the *(unconfirmed)* stages; Dave's remaining feeding steps: claude.ai
   memory instruction, local CLAUDE.md snippet
 
-## Waiting on Dave (updated 2026-08-30 sweep)
+## Waiting on Dave (updated 2026-09-01)
+
+- **Permission prompts — one paste finishes it.** Root cause found and
+  verified 09-01: connectors are exposed under two names (stable UUID +
+  friendly), and a rule naming one form misses calls arriving as the other.
+  Repo settings now allow both spellings for all 14 connectors. Remaining:
+  copy `notes/mac-user-settings.json` into `~/.claude/settings.json` on each
+  Mac — user-level is the only layer that covers terminal sessions. Detail
+  in `notes/permission-prompts-fix.md`.
+- **Zendo refresh routines — decision needed.** They spawn a fresh cloud
+  session per fire, which has no settings file and default permissions, so
+  neither fix above reaches them. This is both the remaining prompt source
+  and a recurring token cost (4x daily). Options: attach the hq repo to each
+  routine, or bind them to one persistent session with a permissive
+  permission mode. HQ can build the second on his word.
+- **Token budget.** This HQ session is $241 of the $767 30-day spend; the
+  driver is context weight re-read every turn. Recommendation: retire it for
+  a fresh HQ session (all durable state is committed) and cut the Zendo
+  refresh cadence. HQ's own 2x-daily check-in fires into this same expensive
+  session — worth pointing at a fresh one or dropping to daily.
 
 - Review loop engineering documentation — needs: mission for LOOP.md + git
   remote decision (session now archived; work is parked in place)
