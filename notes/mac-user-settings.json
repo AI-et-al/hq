@@ -71,5 +71,9 @@
       "mcp__2d3e3f87-e731-411c-bcd9-22010c49ff9a__buy_credits",
       "mcp__2d3e3f87-e731-411c-bcd9-22010c49ff9a__buy_addon"
     ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh"
   }
 }
