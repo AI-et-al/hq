@@ -1,5 +1,7 @@
 # Ledger
 
+> Standing references live in `notes/` — recall playbook (`notes/recall-playbook.md`), Zendo refresh brief, permission-prompt fix, Mac drop-ins. Sessions that sync only this file: look there too.
+
 > Maintained by HQ. Stages: spark → shaping → active → waiting → shipped →
 > tending → parked → closed. Entries marked *(unconfirmed)* were seeded on
 > 2026-08-30 from observed session and routine data and need Dave's
@@ -119,6 +121,7 @@
 - Note: vault's "Janus PR #19 merge unverified since 08-17" is answerable —
   HQ verified via Vercel it merged 2026-08-28.
 - Connects to: agentic-ai-infrastructure, hq
+- 2026-09-03 (inbox, VERIFIED by note): Helen photo-archive work — Apple Photos albums "Helen. Past." (122) / "Helen. Maybe." built, Google Photos live album "Helen. Past." (1,098, face-keyed) built; four manual steps are Dave's (below). Vault added `wiki/concepts/you-have-memory.md` on Dave's directive (Claude has memory; search before claiming amnesia) and cross-linked the recall playbook after discovering vault sessions could not see it.
 
 ### bucketless
 - Stage: parked *(Dave, 2026-08-31: "catch-all project, still figuring out
@@ -143,8 +146,9 @@
   the *(unconfirmed)* stages; Dave's remaining feeding steps: claude.ai
   memory instruction, local CLAUDE.md snippet
 
-## Waiting on Dave (updated 2026-09-01)
+## Waiting on Dave (updated 2026-09-04)
 
+- **Helen photo archive — four manual steps, tap requested for 09-04** (Dave to the vault session: "no schedule just a tap is fine"). (1) Apple Photos: album "Helen. Past." → Cmd+A → Cmd+L (hides, deletes nothing). (2) Apple Photos: delete the one family aquarium photo in "Helen. Maybe.", then tell the vault Claude so it clears that album. (3) Google Photos: archive the contents of live album "Helen. Past." (1,098, auto-adding). (4) Answer for the vault Claude: is the second face cluster (strawberry-blonde wig, oversized glasses, white fur collar) also Helen? Context: obsidibrain `wiki/entities/Helen.md`.
 - **Permission prompts — one paste finishes it.** Root cause found and
   verified 09-01: connectors are exposed under two names (stable UUID +
   friendly), and a rule naming one form misses calls arriving as the other.
