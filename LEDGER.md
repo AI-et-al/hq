@@ -78,6 +78,7 @@
   refreshes stop re-adding janus; confirm the routine's next fire preserves
   the new design
 - Connects to: home-lab
+- 2026-09-04: live-infra layer shipped — Vercel (eve-slack-agent) and Supabase (widgy-icons) hydrate in-browser via the page's mcp capability; the scheduled job is now a git-only ledger sync (trig_01YKZJULrbjkYqfqKbGfn7Ti → refresher session). Old 4x/day routines await Dave's toggles.
 
 ### bookclub-cli
 - Stage: unknown *(unconfirmed — no recent session signal)*
@@ -145,6 +146,7 @@
 - Next: Dave's sync-up conversation (purpose + setup review); then validate
   the *(unconfirmed)* stages; Dave's remaining feeding steps: claude.ai
   memory instruction, local CLAUDE.md snippet
+- 2026-09-04: HQ owns two routines — the daily check-in (13:00 UTC, into this session) and the Zendo ledger refresh (11:00/19:00 UTC, into session_015obGPpQBfKEBVy31DBhJWX). Neither carries connectors; neither can prompt.
 
 ## Waiting on Dave (updated 2026-09-04)
 
@@ -156,15 +158,15 @@
   copy `notes/mac-user-settings.json` into `~/.claude/settings.json` on each
   Mac — user-level is the only layer that covers terminal sessions. Detail
   in `notes/permission-prompts-fix.md`.
-- **Zendo refresh routines — recipe ready, 2 minutes in the UI.** Dave
-  asked HQ to bind them to a persistent session (09-02); HQ built and
-  probed it, and hit a hard org limit: agent-created sessions and routines
-  cannot carry connector grants. So the fix is a single UI-created routine
-  with the **hq repo attached** (which loads the committed dual-name
-  allowlist and ends the prompts), 2x daily, notifications off. Steps and
-  paste-ready prompt: `notes/zendo-routine-v3-recipe.md`. Persistent
-  session `session_015obGPpQBfKEBVy31DBhJWX` is idle and kept for a later
-  connector-free design.
+- **Zendo — toggle off the four old refresh routines (4 clicks).** HQ
+  fixed the refresh on 09-04 by removing the connector dependency: the
+  page now fetches Vercel and Supabase live in your browser (alongside
+  Calendar and Gmail), and a new connector-free routine syncs the project
+  cards from LEDGER.md at 11:00/19:00 UTC with nothing to approve. The
+  four "Refresh Zazen Station dashboard" routines are now redundant but
+  keep prompting you 4x/day; agents cannot disable or delete UI-created
+  routines (both refused 09-04), so: claude.ai → Routines → toggle each
+  off. That is the last click this problem needs.
 - **Token budget.** This HQ session is $241 of the $767 30-day spend; the
   driver is context weight re-read every turn. Recommendation: retire it for
   a fresh HQ session (all durable state is committed) and cut the Zendo
