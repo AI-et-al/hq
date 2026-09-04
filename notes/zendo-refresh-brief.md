@@ -1,74 +1,64 @@
-# Zendo refresh — standing brief for the refresher session
+# Zendo refresh — standing brief for the refresher session (git-only, v2)
 
 This file is the instruction set for the persistent "Zendo refresher"
 session. The scheduled trigger just says "run the brief"; the brief lives
-here so Dave (or HQ) can change it with a commit. Re-read it on every fire —
-do `git pull` first.
+here so Dave or HQ can change it with a commit. Re-read it on every fire —
+`git pull` first.
 
 Artifact: https://claude.ai/code/artifact/4da496c0-687a-44ae-af33-a50d42363d71
+
+## Why this session needs no connectors
+
+As of 2026-09-04 the page hydrates Calendar, Gmail, Vercel and Supabase
+**live in the viewer's browser** through Dave's own connectors (mcp
+capability). The only content that cannot be fetched from a browser is the
+project state in this repo's `LEDGER.md`. That is this session's whole job.
 
 ## Posture
 
 - Work autonomously. Send no messages, deliver no files, create no
   scheduled tasks, send no push notifications.
-- **Never wait on a permission prompt.** If a tool call is denied or asks
-  for approval, treat that source as unreachable for this run: keep the
-  section's previous content, mark its source note
-  `stale — <service> unreachable <date>`, and move on.
-- **Call connectors by their friendly server name only** —
-  `mcp__Gmail__*`, `mcp__Google_Calendar__*`, `mcp__Vercel__*`,
-  `mcp__Supabase__*`. Never fall back to the UUID spelling
-  (`mcp__269fb4f1-…`); that path raises approval prompts on Dave's screen.
-  If the friendly name is not connected, the service is unreachable this
-  run — see above.
-- Keep the run small. No exploratory reads; only the calls listed here.
+- **This session has no connectors. Make no `mcp__*` tool call of any
+  kind.** Everything you need is in this repo and the artifact.
+- **Never wait on a permission prompt.** If any tool call asks for
+  approval or is denied, skip that step and finish without it.
+- Keep the run small: `git pull`, read `LEDGER.md`, read the artifact,
+  patch, publish. Nothing exploratory.
 
-## 1. Gather (render times in America/Chicago)
+## 1. Source
 
-- **Calendar** — `list_events`, today through +30 days, on (a) the primary
-  calendar, (b) `family11438714781506581322@group.calendar.google.com`,
-  (c) `en.usa#holiday@group.v.calendar.google.com`. A calendar with zero
-  events returns no `events` array at all.
-- **Gmail** — `search_threads`, query `in:inbox is:unread`, pageSize 20.
-- **Projects** — `LEDGER.md` in this repo is the source of truth for
-  project state (HQ maintains it). Use each project's status, latest
-  dated line, and waiting-on-Dave items. Label repo-derived claims as such.
-- **Infra, only if quick** — Vercel team `team_AwfVMsN1GRBv8x4HHL5IMiIz`:
-  latest deployment state of **eve-slack-agent only**. Supabase: status of
-  **widgy-icons**.
+`LEDGER.md` — per project: status, latest dated line, waiting-on-Dave
+items. Only projects already present in the page's `SNAPSHOT.projects`
+array are updated; do not add or remove projects (HQ does that by editing
+the page directly).
 
-**Tracking rule (Dave, 2026-08-31):** Zendo tracks only projects whose
-GitHub repos AI-et-al created — never repos forked for analysis. Do not
-track or display `janus` (retired) or `steipete-me` (fork). If a tile or
-row for either reappears, remove it during the data update.
+**Tracking rule (Dave, 2026-08-31):** never track or display `janus`
+(retired) or `steipete-me` (analysis fork). If a card or row for either
+reappears, remove it.
 
 ## 2. Read the live page
 
 Artifact tool, `action: "read"` with the url above — required before any
-publish. Build on the version that comes back; if Dave changed the page,
-keep his structure. Make the working copy in the scratchpad directory, not
-the repo.
+publish. Build on the version that comes back. Working copy goes in the
+scratchpad directory, not the repo.
 
-## 3. Update data only
+## 3. Update — project cards only
 
-Preserve design, structure, title, favicon, capabilities, and the
-**OBSIDIBRAIN panel** (between its comment markers) verbatim. Change only:
+Change only, inside the inline `SNAPSHOT.projects` array: each project's
+`st` (status tuple), `line`, `meta` rows that the ledger contradicts, and
+`src` (set to `"HQ ledger · <Mon D>"`). Also the Projects chip default
+text (`#infra-chip-text`) to `"Ledger · <Mon D>"`.
 
-- the `SNAPSHOT` object in the inline script — `generatedAt` = now,
-  events, inbox groups/counts/`moreCount`, project statuses/lines/src dates;
-- the stat-tile values in the static markup;
-- the static calendar fallback rows;
-- the "Last deploy" tile.
-
-Curate inbox rows into the existing groups (Security / Needs action /
-Deliveries / Reading); everything else only counts toward `moreCount`.
+Do NOT touch: `SNAPSHOT.generatedAt`, events, inbox, the stat tiles, the
+deploy tile, the `widgy-icons` card's Supabase status (live layer owns
+it), the OBSIDIBRAIN panel (between its comment markers), design, title,
+favicon, capabilities, or anything in the live layer script.
 **Never insert sample or invented data.** Don't editorialize beyond what
 the ledger states.
 
 ## 4. Publish
 
-Artifact tool with the same `url` so it updates in place; omit `favicon`
-and `capabilities` so they carry forward; `label: "scheduled-refresh"`.
-If nothing changed since the current snapshot, skip the publish entirely.
-On a publish conflict, read the newer version and rebuild on it — never
-force.
+Artifact tool with the same `url`; omit `favicon` and `capabilities` so
+they carry forward; `label: "ledger-refresh"`. If no project card
+changed, skip the publish entirely. On a publish conflict, read the newer
+version and rebuild on it — never force.
