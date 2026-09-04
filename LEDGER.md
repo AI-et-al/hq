@@ -78,7 +78,7 @@
   refreshes stop re-adding janus; confirm the routine's next fire preserves
   the new design
 - Connects to: home-lab
-- 2026-09-04: live-infra layer shipped — Vercel (eve-slack-agent) and Supabase (widgy-icons) hydrate in-browser via the page's mcp capability; the scheduled job is now a git-only ledger sync (trig_01YKZJULrbjkYqfqKbGfn7Ti → refresher session). Old 4x/day routines await Dave's toggles.
+- 2026-09-04: live-infra layer shipped — Vercel (eve-slack-agent) and Supabase (widgy-icons) hydrate in-browser via the page's mcp capability; the scheduled job is now a git-only ledger sync dispatched by HQ's daily check-in as a fresh child session. Old 4x/day routines await Dave's toggles.
 
 ### bookclub-cli
 - Stage: unknown *(unconfirmed — no recent session signal)*
@@ -146,7 +146,7 @@
 - Next: Dave's sync-up conversation (purpose + setup review); then validate
   the *(unconfirmed)* stages; Dave's remaining feeding steps: claude.ai
   memory instruction, local CLAUDE.md snippet
-- 2026-09-04: HQ owns two routines — the daily check-in (13:00 UTC, into this session) and the Zendo ledger refresh (11:00/19:00 UTC, into session_015obGPpQBfKEBVy31DBhJWX). Neither carries connectors; neither can prompt.
+- 2026-09-04: HQ owns one routine — the daily check-in (13:00 UTC, into this session), which now also dispatches the Zendo ledger sync: when LEDGER.md has changed since notes/zendo-last-sync, it spawns a fresh child session via create_session (repo attached, no connectors, ~3 min, ~$3). Validated 09-04 23:49–23:52: ran end to end, 0 cards changed, publish correctly skipped, zero prompts. A trigger bound to an idle persistent session was tried first and does NOT wake it — retired same day.
 
 ## Waiting on Dave (updated 2026-09-04)
 
