@@ -62,3 +62,22 @@ Artifact tool with the same `url`; omit `favicon` and `capabilities` so
 they carry forward; `label: "ledger-refresh"`. If no project card
 changed, skip the publish entirely. On a publish conflict, read the newer
 version and rebuild on it — never force.
+
+## Card → ledger name map (added 2026-09-04 after the first sync)
+
+The page's project cards and the ledger's `###` keys use different
+names. Sync deterministically with this map; a card with no mapped
+ledger key keeps its content untouched.
+
+| Page card            | Ledger key                                  |
+|----------------------|---------------------------------------------|
+| Symposium            | `janus-reconstruction` (retired → Symposium) |
+| bookclub CLI         | `bookclub-cli`                              |
+| Substack             | `ai-et-al-substack`                         |
+| widgy-icons          | `personal-dashboard` (Supabase piece; live layer owns its status) |
+| ralph-orchestrator   | **unmapped** — possibly `agentic-ai-infrastructure` (loop engineering); awaiting Dave's confirmation |
+| OpenClaw             | **unmapped** — no ledger entry              |
+| (bench line)         | `home-lab`, `ai-hardware-robotics`          |
+
+"Unknown/unconfirmed" in the ledger is absence of signal, not a
+contradiction — never downgrade a card on it.
