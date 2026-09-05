@@ -97,3 +97,8 @@ fields the ledger does not state.
 | Page card    | Ledger key     | Display name |
 |--------------|----------------|--------------|
 | tokenograph  | `tokenograph`  | tokenograph  |
+
+## GitHub panel (added 2026-09-05)
+
+Every sync also refreshes `SNAPSHOT.github` per the every-sync section of
+`notes/zendo-github-panel.md`. Data: `notes/github-activity.json`.
