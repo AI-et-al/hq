@@ -147,7 +147,9 @@
   and awaiting a handover paste; an obsidibrain static panel was built
   with it.
 - **Waiting on Dave**: pick the license (LICENSE + pyproject `license`
-  field + classifier, then push); paste the codex-adapter handover.
+  field + classifier, then push). Codex-adapter handover: DONE — 3
+  commits pushed 09-05 03:39 UTC (Codex CLI adapter, mobile Codex field
+  report, panel header polish).
 - **HQ note**: Zendo card added 09-05 from this entry.
 
 ### front-elevation (AI-et-al-dev, private)
@@ -189,7 +191,7 @@
 ## Waiting on Dave (updated 2026-09-05)
 - **tokenograph — license pick.** The cloud build session is holding on
   "which one" to write LICENSE + the pyproject license field, then push.
-  Also: paste the codex-adapter handover into the waiting worktree session.
+  (Codex adapter landed 09-05 — that item is closed.)
 - **obsidibrain — Sync-merge incident, VERIFIED against the vault log
   (f12f08c, 09-04 20:34 CDT).** Obsidian's core Sync plugin merged Dave's
   old Proton vault (`pto-emulator`) into obsidibrain at 00:19 on 09-03:
