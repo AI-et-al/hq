@@ -150,6 +150,18 @@
   field + classifier, then push); paste the codex-adapter handover.
 - **HQ note**: Zendo card added 09-05 from this entry.
 
+### front-elevation (AI-et-al-dev, private)
+- **What** (per HQ's read-only onboarding child, 09-05): an agent-run
+  investment simulation under Buffett-style discipline — $105K imaginary
+  paper-trading book, Python registrar + tools, strict git discipline for
+  every decision. ~50 commits; last push 00:13 UTC 09-05.
+- **Status**: ACTIVE, sealed — the agent is waiting on "the Chairman"
+  (Dave) to set `fills_enabled` and `punch_card_period` before trading
+  opens; 3 threads marked OPEN; blinded tests pending.
+- **Waiting on Dave**: the two Chairman keys, if the sim is meant to run.
+- **HQ note**: found by the 09-05 GitHub sweep (first repo caught by the
+  auto-onboarding rule). Cross-org, so HQ reads it via a child session.
+
 ### bucketless
 - Stage: parked *(Dave, 2026-08-31: "catch-all project, still figuring out
   how best to use it — ignore for now")*

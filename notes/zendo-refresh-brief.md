@@ -102,3 +102,16 @@ fields the ledger does not state.
 
 Every sync also refreshes `SNAPSHOT.github` per the every-sync section of
 `notes/zendo-github-panel.md`. Data: `notes/github-activity.json`.
+
+## Small fix queued for the next sync (from the 09-05 sync's note)
+
+The snapshot-boot block calls `setChip("infra-chip", "snapshot", snapLabel)`
+and `setChip("gh-chip", "snapshot", snapLabel)`, which overwrites the
+"Ledger · <date>" default text. Change those two boot lines to
+`setChip("infra-chip", "snapshot", "Ledger · " + <sync date>)` and the same
+for `gh-chip`; leave `cal-chip`/`inbox-chip` on snapLabel (their data really
+is the snapshot). Data-only change; no other structure.
+
+| Page card        | Ledger key                          | Display name    |
+|------------------|-------------------------------------|-----------------|
+| front-elevation  | `front-elevation (AI-et-al-dev, private)` | front-elevation |
