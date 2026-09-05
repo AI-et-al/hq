@@ -203,9 +203,11 @@
   or pushed. The vault session moved everything to
   `~/obsidian-sync-merge-quarantine-2026-09-03/`, restored templates and
   appearance, added root-level ignore shields; Dave turned Sync off
-  09-04 20:29. Yours, in order: (1) **rotate every credential in those 26
-  notes and move them to Keychain / Proton Pass** — quarantined is not
-  revoked; (2) disconnect or delete the polluted remote Sync vault
+  09-04 20:29. Dave, 09-05: "99% certain those keys are defunct, delete them."
+  Yours, in order: (1) **delete the 26 credential notes from the
+  quarantine folder** (HQ cannot touch local disk; command in the 09-05
+  log) — and, for the 1%, glance at the GitHub / Anthropic / OpenAI key
+  pages, which list what is still live; (2) disconnect or delete the polluted remote Sync vault
   (Obsidian → Settings → Sync → manage remote vaults) and check any other
   device on it, before Sync is ever re-enabled; (3) decide what else in
   quarantine is worth keeping; (4) say "go" for the branch-vs-main GitHub
