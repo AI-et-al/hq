@@ -115,3 +115,11 @@ is the snapshot). Data-only change; no other structure.
 | Page card        | Ledger key                          | Display name    |
 |------------------|-------------------------------------|-----------------|
 | front-elevation  | `front-elevation (AI-et-al-dev, private)` | front-elevation |
+
+## Queued improvement (from the 09-05 13:20 sync): `SNAPSHOT.ledgerDate`
+
+Next sync: add `ledgerDate: "<Mon D>"` to SNAPSHOT (the ledger commit
+date the cards were synced from) and change the two boot lines to
+`setChip("infra-chip", "snapshot", "Ledger · " + SNAPSHOT.ledgerDate)` and
+the same for `gh-chip`, so no literal date needs rewriting. Then update
+only `SNAPSHOT.ledgerDate` on every sync. Remove this section once applied.
