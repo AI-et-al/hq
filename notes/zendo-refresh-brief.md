@@ -81,3 +81,19 @@ ledger key keeps its content untouched.
 
 "Unknown/unconfirmed" in the ledger is absence of signal, not a
 contradiction — never downgrade a card on it.
+
+## Adding a card (rule added 2026-09-05)
+
+If the ledger has a `### <key>` project entry whose **Status** line says
+ACTIVE and the map below names a card for it that the page lacks, ADD
+the card: `name` = the display name below, `st` from the status
+(ACTIVE → `["ok","✓","active"]`; blocked-on-Dave → `["warn","◐","<short reason>"]`),
+`line` = the ledger's **What** sentence (first sentence, trimmed),
+`meta` = up to three [label, value] pairs from the entry (Repo, Version,
+Waiting), `src` = "HQ ledger · <entry date>". Place it FIRST in
+`SNAPSHOT.projects` if its ledger entry is the newest. Never invent
+fields the ledger does not state.
+
+| Page card    | Ledger key     | Display name |
+|--------------|----------------|--------------|
+| tokenograph  | `tokenograph`  | tokenograph  |

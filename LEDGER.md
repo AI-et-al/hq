@@ -124,6 +124,32 @@
 - Connects to: agentic-ai-infrastructure, hq
 - 2026-09-03 (inbox, VERIFIED by note): Helen photo-archive work — Apple Photos albums "Helen. Past." (122) / "Helen. Maybe." built, Google Photos live album "Helen. Past." (1,098, face-keyed) built; four manual steps are Dave's (below). Vault added `wiki/concepts/you-have-memory.md` on Dave's directive (Claude has memory; search before claiming amnesia) and cross-linked the recall playbook after discovering vault sessions could not see it.
 
+### tokenograph
+- **What**: Tokenometrics for coding-agent sessions — point it at a Claude
+  Code transcript or a pi session and it renders one page: throughput,
+  wall-clock split, token + cost accounting, per-call timeline, and a
+  context-window ledger (what is in context, what each part cost, why the
+  cache was rebuilt). Exports sessions as a property graph; `fleet` mode
+  watches every session on the machine with herdr states. Python stdlib
+  only, no build step. Started as a clean-room equivalent of Han Xiao's
+  16-hour-run stats panel. This is the "how much context am I using"
+  tool Dave asked for on 09-02 — he built it himself in a day.
+- **Repo**: AI-et-al/Tokenograph (public, AI-et-al-created → Zendo
+  tracks it). v0.3.0. 7 commits 09-04: renamed from "lapboard", package
+  layout, graph export, history import, docs (agent brief, field notes,
+  terminal guide, harnesses, roadmap), .gitignore cleanup. Last push
+  23:18 UTC 09-04. Verified by HQ clone.
+- **Status**: ACTIVE — newest project in the fleet. Cloud build session
+  (iOS-origin, 16:21–23:20 UTC 09-04, artifact "Building tokenograph
+  from a screenshot") is blocked on a license choice. Local sessions
+  same evening: live `serve` on :8765 is session-scoped (resume by id
+  prefix, not `latest`); a `codex-adapter` branch worktree is prepared
+  and awaiting a handover paste; an obsidibrain static panel was built
+  with it.
+- **Waiting on Dave**: pick the license (LICENSE + pyproject `license`
+  field + classifier, then push); paste the codex-adapter handover.
+- **HQ note**: Zendo card added 09-05 from this entry.
+
 ### bucketless
 - Stage: parked *(Dave, 2026-08-31: "catch-all project, still figuring out
   how best to use it — ignore for now")*
@@ -148,7 +174,18 @@
   memory instruction, local CLAUDE.md snippet
 - 2026-09-04: HQ owns one routine — the daily check-in (13:00 UTC, into this session), which now also dispatches the Zendo ledger sync: when LEDGER.md has changed since notes/zendo-last-sync, it spawns a fresh child session via create_session (repo attached, no connectors, ~3 min, ~$3). Validated 09-04 23:49–23:52: ran end to end, 0 cards changed, publish correctly skipped, zero prompts. A trigger bound to an idle persistent session was tried first and does NOT wake it — retired same day.
 
-## Waiting on Dave (updated 2026-09-04)
+## Waiting on Dave (updated 2026-09-05)
+- **tokenograph — license pick.** The cloud build session is holding on
+  "which one" to write LICENSE + the pyproject license field, then push.
+  Also: paste the codex-adapter handover into the waiting worktree session.
+- **obsidibrain — vault merge incident (per the 09-05 01:35 session
+  summary, not yet verified by HQ).** The vault was restored after a
+  polluted merge: 119 items (45 MB) moved to quarantine, templates and
+  appearance restored, ignore shield added. Three steps are yours:
+  (1) disconnect the polluted Sync remote in Obsidian settings; (2) rotate
+  and delete the 26 credential notes sitting in quarantine; (3) then tell
+  that session "go" for the GitHub cleanup. Credentials in a quarantine
+  folder are still credentials — (2) is the urgent one.
 
 - **Helen photo archive — four manual steps, tap requested for 09-04** (Dave to the vault session: "no schedule just a tap is fine"). (1) Apple Photos: album "Helen. Past." → Cmd+A → Cmd+L (hides, deletes nothing). (2) Apple Photos: delete the one family aquarium photo in "Helen. Maybe.", then tell the vault Claude so it clears that album. (3) Google Photos: archive the contents of live album "Helen. Past." (1,098, auto-adding). (4) Answer for the vault Claude: is the second face cluster (strawberry-blonde wig, oversized glasses, white fur collar) also Helen? Context: obsidibrain `wiki/entities/Helen.md`.
 - **Permission prompts — one paste finishes it.** Root cause found and
