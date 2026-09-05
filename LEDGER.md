@@ -178,15 +178,24 @@
 - **tokenograph — license pick.** The cloud build session is holding on
   "which one" to write LICENSE + the pyproject license field, then push.
   Also: paste the codex-adapter handover into the waiting worktree session.
-- **obsidibrain — vault merge incident (per the 09-05 01:35 session
-  summary, not yet verified by HQ).** The vault was restored after a
-  polluted merge: 119 items (45 MB) moved to quarantine, templates and
-  appearance restored, ignore shield added. Three steps are yours:
-  (1) disconnect the polluted Sync remote in Obsidian settings; (2) rotate
-  and delete the 26 credential notes sitting in quarantine; (3) then tell
-  that session "go" for the GitHub cleanup. Credentials in a quarantine
-  folder are still credentials — (2) is the urgent one.
-
+- **obsidibrain — Sync-merge incident, VERIFIED against the vault log
+  (f12f08c, 09-04 20:34 CDT).** Obsidian's core Sync plugin merged Dave's
+  old Proton vault (`pto-emulator`) into obsidibrain at 00:19 on 09-03:
+  119 items / 45 MB, including **26 plaintext credential notes** (GitHub
+  PATs, Anthropic, OpenAI, Gemini, Discord bot tokens, Linode, Twilio, an
+  Apple app-specific password). They sat untracked at the vault root
+  ~44 h — one blanket `git add` from the private repo; the weekly
+  maintenance run (Mon 04:23) would have been next. Nothing was committed
+  or pushed. The vault session moved everything to
+  `~/obsidian-sync-merge-quarantine-2026-09-03/`, restored templates and
+  appearance, added root-level ignore shields; Dave turned Sync off
+  09-04 20:29. Yours, in order: (1) **rotate every credential in those 26
+  notes and move them to Keychain / Proton Pass** — quarantined is not
+  revoked; (2) disconnect or delete the polluted remote Sync vault
+  (Obsidian → Settings → Sync → manage remote vaults) and check any other
+  device on it, before Sync is ever re-enabled; (3) decide what else in
+  quarantine is worth keeping; (4) say "go" for the branch-vs-main GitHub
+  cleanup (37 commits on the live branch, main frozen 08-10).
 - **Helen photo archive — four manual steps, tap requested for 09-04** (Dave to the vault session: "no schedule just a tap is fine"). (1) Apple Photos: album "Helen. Past." → Cmd+A → Cmd+L (hides, deletes nothing). (2) Apple Photos: delete the one family aquarium photo in "Helen. Maybe.", then tell the vault Claude so it clears that album. (3) Google Photos: archive the contents of live album "Helen. Past." (1,098, auto-adding). (4) Answer for the vault Claude: is the second face cluster (strawberry-blonde wig, oversized glasses, white fur collar) also Helen? Context: obsidibrain `wiki/entities/Helen.md`.
 - **Permission prompts — one paste finishes it.** Root cause found and
   verified 09-01: connectors are exposed under two names (stable UUID +

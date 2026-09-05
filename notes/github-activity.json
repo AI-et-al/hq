@@ -1,0 +1,190 @@
+{
+ "snapshot_at": "2026-09-05T02:05:00Z",
+ "source": "Claude_Code_Remote list_repos (HQ session)",
+ "repos": [
+  {
+   "repo": "AI-et-al/hq",
+   "pushed_at": "2026-09-05T02:00:37Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al/obsidibrain",
+   "pushed_at": "2026-09-05T01:34:48Z",
+   "visibility": "private",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al-dev/front-elevation",
+   "pushed_at": "2026-09-05T00:13:58Z",
+   "visibility": "private",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al/.github",
+   "pushed_at": "2026-09-04T23:19:26Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": false,
+   "tracked": false
+  },
+  {
+   "repo": "AI-et-al/Tokenograph",
+   "pushed_at": "2026-09-04T23:18:24Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al/ios-projects",
+   "pushed_at": "2026-08-29T18:34:39Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al/Janus",
+   "pushed_at": "2026-08-28T05:01:50Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": true,
+   "tracked": false
+  },
+  {
+   "repo": "AI-et-al/symposium",
+   "pushed_at": "2026-08-12T22:12:19Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al/eve-slack-agent",
+   "pushed_at": "2026-06-30T19:56:19Z",
+   "visibility": "private",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al/Janus-",
+   "pushed_at": "2026-01-06T00:28:16Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": true,
+   "tracked": false
+  },
+  {
+   "repo": "AI-et-al/codex-skills",
+   "pushed_at": "2026-01-04T13:44:06Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al/File-Copier",
+   "pushed_at": "2025-12-19T22:39:49Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al-dev/claude-mem",
+   "pushed_at": "2025-12-18T21:44:51Z",
+   "visibility": "public",
+   "fork": true,
+   "archived": false,
+   "tracked": false
+  },
+  {
+   "repo": "AI-et-al/orpheus-multimodel-deliberation-consensus-orchestration-v1",
+   "pushed_at": "2025-12-15T18:19:50Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al/llm-council",
+   "pushed_at": "2025-11-22T23:35:21Z",
+   "visibility": "public",
+   "fork": true,
+   "archived": false,
+   "tracked": false
+  },
+  {
+   "repo": "AI-et-al/constantine-kyriakos-theme",
+   "pushed_at": "2025-11-11T19:44:16Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al/omarchy-janus-theme",
+   "pushed_at": "2025-11-11T16:45:13Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al/multi-ai-collab",
+   "pushed_at": "2025-10-19T02:25:44Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al-dev/codex-claude-co-op",
+   "pushed_at": "2025-10-11T23:50:23Z",
+   "visibility": "private",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al/GemBooth-Glasses-Analyist",
+   "pushed_at": "2025-10-05T18:06:18Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al/swarm-things-et-al",
+   "pushed_at": "2025-10-04T20:31:03Z",
+   "visibility": "public",
+   "fork": false,
+   "archived": false,
+   "tracked": true
+  },
+  {
+   "repo": "AI-et-al/secrets",
+   "pushed_at": "2025-08-29T21:27:12Z",
+   "visibility": "private",
+   "fork": false,
+   "archived": false,
+   "tracked": false
+  },
+  {
+   "repo": "AI-et-al/desktop-tutorial",
+   "pushed_at": "2024-03-28T02:12:06Z",
+   "visibility": "private",
+   "fork": false,
+   "archived": false,
+   "tracked": false
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+# repos Zendo never displays (one per line, reason after #)
+AI-et-al/.github  # org profile repo; sessions park outcome branches here — not a project
+AI-et-al/secrets  # never display
+AI-et-al/desktop-tutorial  # GitHub onboarding stub
+AI-et-al/Janus  # retired (Dave, 08-31: do not track)
+AI-et-al/Janus-  # retired duplicate
+# forks and archived repos are excluded automatically (tracking rule, Dave 08-31)
